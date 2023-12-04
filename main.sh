@@ -20,3 +20,15 @@ ls > ls.txt
 alias today="date '+%Y-%m-%d'"
 
 today > date.txt
+wc -w read.txt > textcount.txt
+ps aux | head -n 5 > process.txt
+ifconfig | head -n 5 > netstat.txt
+mount | head -n 5 > mount.txt
+touch permissions.txt
+
+chmod a+rwx permissions.txt
+TESTENV1="test"
+grep -o '\b\w\{3,\}\b' read.txt > regex.txt
+
+cd ..
+
